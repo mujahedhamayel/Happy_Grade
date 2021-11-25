@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HappyGrades|</title>
+</head>
+
+<style>
+    body{
+
+        background-attachment: fixed;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(60,50,70,0.2);
+
+    }
+    nav.nav1{
+        height: 80px;
+        width: 100%;
+        background: rgba(80,90,70,0.5);
+    }
+    nav.nav1 ul{
+        float: right;
+        margin-right: 250px;
+
+    }
+    nav.nav1 ul li{
+        list-style: none;
+        margin:0px 40px;
+        display: inline-block;
+        line-height: 80px;
+    }
+    nav.nav1 ul li a{
+        text-decoration:none;
+        color: black;
+        font-size: 20px;
+        font-family: "Droid Sans";
+        padding: 10px 13px;
+    }
+    nav.nav1 ul li a:hover{
+        background: beige;
+        border-radius: 20px;
+    }
+    div.course{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: sans-serif;
+        user-select: none;
+    }
+    div.course table {
+        border: 1px solid dimgrey;
+        width: 500px;
+        height: auto;
+        line-height: 1.6;
+
+    }
+    div.course table td,th{
+        padding: 10px 10px;
+        margin: 3px;
+    }
+    div.course table th{
+        background-color: rgba(80,90,70,0.5);
+    }
+    div.course table tr:nth-of-type(even){
+
+    }
+    div.course table td,th{
+        font-family: "Arial Nova"
+    }
+
+
+
+    nav.nav1 img{
+        padding: 7px;
+        width: 100px;
+        height: 67px;
+    }
+
+    div.item{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: "Arial Nova";
+        user-select: none;
+    }
+
+    button.addA{
+        margin-right: 65px;
+        outline: none;
+        display: block;
+        border: 0;
+        line-height: 2;
+        padding: 15px 15px;
+        border-radius: 27px;
+        font-size: 15px;
+        background: rgba(80,90,70,0.5);
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+    button.addA:hover,button.delC:focus{
+        background: bisque;
+
+    }
+    button.addA:active{
+        background: bisque;
+    }
+    .selected{
+        background-color: bisque;
+        font-weight: bold;
+    }
+    div.course table tr {
+        cursor: pointer;
+        transition: all .25s ease-in-out;
+    }
+    nav.nav1 ul li a.page{
+        color: dimgrey;
+        text-decoration: underline;
+        text-decoration-color: black;
+    }
+</style>
+<body>
+<nav class="nav1">
+    <img src="imgs/2641278-middle-modified.png" alt="">
+
+    <ul>
+        <li><a class="active" href="#">log out</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#" class="page">Assigment</a></li>
+        <li><a href="#">Grade</a></li>
+        <li><a href="#">Professors</a></li>
+
+    </ul>
+
+</nav>
+<div class="course" >
+    <table border="1px" id="table">
+        <th>Course</th>
+        <tr><td>Architecture 2</td></tr>
+        <tr><td>Networks 1</td></tr>
+        <tr><td>C Programming</td></tr>
+        <tr><td>SoftWare Programming</td></tr>
+    </table>
+    <script>
+        function selectedRaw(){
+            var index,
+                table= document.getElementById("table");
+            for (var i=1; i<table.rows.length; i++)
+            {
+                table.rows[i].onclick= function(){
+                    if(typeof index !== "undefined")
+                    {
+                        table.rows[index].classList.toggle("selected");
+                    }
+                    console.log(typeof index)
+                    index= this.rowIndex;
+                    this.classList.toggle("selected");
+                    console.log(typeof index);
+                };
+
+            }
+        }
+        selectedRaw();
+    </script>
+
+</div>
+<div class="buttons">
+
+
+   <!-- <div class="item"><button name="addAssigProf" class="addA">Delete Course</button></div> --!>
+</div>
+</body>
+</html>

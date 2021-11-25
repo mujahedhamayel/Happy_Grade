@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HappyGrades|</title>
+</head>
+
+<style>
+    body{
+
+        background-attachment: fixed;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(60,50,70,0.2);
+
+    }
+    nav.nav1{
+        height: 80px;
+        width: 100%;
+        background: rgba(80,90,70,0.5);
+    }
+    nav.nav1 ul{
+        float: right;
+        margin-right: 250px;
+
+    }
+    nav.nav1 ul li{
+        list-style: none;
+        margin:0px 40px;
+        display: inline-block;
+        line-height: 80px;
+    }
+    nav.nav1 ul li a{
+        text-decoration:none;
+        color: black;
+        font-size: 20px;
+        font-family: "Droid Sans";
+        padding: 10px 13px;
+    }
+    nav.nav1 ul li a:hover{
+        background: beige;
+        border-radius: 20px;
+    }
+    div.center{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+        font-family: sans-serif;
+        user-select: none;
+    }
+    div.center {
+        font-size: 25px;
+        font-family: "Gotham Bold";
+        color: black;
+        width: 900px;
+        text-align: -moz-center;
+
+    }
+    div.Ann{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+        font-family: sans-serif;
+
+    }
+
+    nav.nav1 img{
+        padding: 7px;
+        width: 100px;
+        height: 67px;
+    }
+    button.pubb{
+        margin-left: 270px;
+        outline: none;
+        display: block;
+        border: 0;
+        line-height: 2;
+        padding: 15px 15px;
+        border-radius: 27px;
+        font-size: 15px;
+        background: rgba(80,90,70,0.5);
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+    button.pubb:hover{
+        background: bisque;
+
+    }
+    button.pubb:active{
+        background: bisque;
+    }
+</style>
+<body>
+<nav class="nav1">
+    <img src="imgs/2641278-middle-modified.png" alt="">
+
+    <ul>
+        <li><a class="active" href="#">log out</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Assigment</a></li>
+        <li><a href="#">Grade</a></li>
+        <li><a href="#">Teaching Assistant</a></li>
+
+    </ul>
+
+</nav>
+<div class="center" >
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>ID:</td>
+            <td></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Faculty:</td>
+            <td></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Specification:</td>
+            <td></td>
+        </tr>
+        <tr></tr>
+    </table>
+
+</div>
+<div class="Ann">
+    <table>
+        <tr>
+            <td></td>
+            <td><textarea name="areaAnouncment" id="announ" cols="83" rows="23"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button class="pubb">Publish</button></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

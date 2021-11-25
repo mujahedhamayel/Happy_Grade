@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> HappyGrades </title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        background-color: #b3cccc;
+        background: linear-gradient(to left bottom,rgba(150,88,60,0.4),#29293d );
+        display: flex;
+    }
+    section.interface{
+        width: 100%;
+        min-height: 1000px;
+        background: rgb(168, 167, 162);
+        background: linear-gradient(to left bottom,rgb(168, 167, 162),rgb(232, 237, 218));
+
+        display: flex;
+
+    }
+    table.stu{
+        height: 100%;
+        width: 100%;
+    }
+    table.studentPart img{
+        padding: 7px;
+        width: 10px;
+        height: 57px;
+    }
+    div.student{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        background: linear-gradient(to left bottom,rgb(168, 167, 162),rgb(232, 237, 218));
+        border-radius: 2rem;
+    }
+    div.announcment{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        margin: 5rem;
+    }
+    div.element{
+        display: flex;
+        margin: 2rem 0rem;
+        padding:1rem 5rem;
+        align-items: center;
+    }
+    div.element h3{
+        padding: 0rem 2rem;
+    }
+
+    div.posts{
+        display: flex;
+        border-radius: 1rem;
+        margin: 2rem 0rem;
+        padding: 2rem;
+        background: linear-gradient(to left bottom,rgb(168, 167, 162),rgb(232, 237, 218));
+        box-shadow: 6px 6px 20px;
+    }
+    div.postsInfo h3 a:hover{
+        background: burlywood;
+        border-radius: 1px;
+    }
+    h3:hover{
+        background-color: antiquewhite;
+        border-radius: 1px;
+    }
+</style>
+<body >
+ <section class="interface">
+     <div class="student">
+         <div class="info">
+             <h2>Meera Saymeh</h2>
+             <h4>1112589</h4>
+         </div>
+
+         <div class="links">
+             <div class="element">
+                 <img src="imgs/course-modified_60x60.png" alt="">
+                 <h3>Courses</h3>
+         </div>
+
+         <div class="element">
+                 <img src="imgs/grades-icon-_60x60.png" alt="">
+                 <h3>Grades</h3>
+
+         </div>
+
+         <div class="element">
+                 <img src="imgs/assi-modified_60x60.png" alt="">
+                 <h3>Assigments</h3>
+
+         </div>
+
+         <div class="element">
+                 <img src="imgs/personal-information-modified_60x60.png" alt="">
+                 <h3>Personal Information</h3>
+
+         </div>
+     </div>
+
+     </div>
+
+         <div class="announcment">
+             <div class="status"><h1>Announcements</h1></div>
+             <div class="posts">
+                 <div class="postsInfo">
+                     <h2>Hello and welcome to HappyGrades. Hope you are having a productive day!</h2>
+                     <h3>Next week a new Assigment will be uploaded and it should be done in five days></h3>
+                 </div>
+
+             </div>
+             <div class="posts">
+                 <div class="postsInfo">
+                     <h3>Poll for your next exam:</h3>
+                     <br>
+                     <p><h4>wendesday</h4></p>
+                     <br>
+                     <p><h4>monday</h4></p>
+                     <br>
+                     <p><h4>sunday</h4></p>
+                 </div>
+
+             </div>
+     </div>
+
+ </section>
+</body>
+</html>
