@@ -1,0 +1,157 @@
+
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 09, 2021 at 01:21 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.3.27
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `dar_quran`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `event`
+--
+
+CREATE TABLE `event` (
+  `event_name` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `grades`
+--
+
+CREATE TABLE `grades` (
+  `part1` double DEFAULT NULL,
+  `part2` double DEFAULT NULL,
+  `part3` double DEFAULT NULL,
+  `part4` double DEFAULT NULL,
+  `part5` double DEFAULT NULL,
+  `part6` double DEFAULT NULL,
+  `part7` double DEFAULT NULL,
+  `part8` double DEFAULT NULL,
+  `part9` double DEFAULT NULL,
+  `part10` double DEFAULT NULL,
+  `part11` double DEFAULT NULL,
+  `part12` double DEFAULT NULL,
+  `part13` double DEFAULT NULL,
+  `part14` double DEFAULT NULL,
+  `part15` double DEFAULT NULL,
+  `circle` text NOT NULL,
+  `fullname` text NOT NULL,
+  `user` text NOT NULL,
+  `pic` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+CREATE TABLE `news` (
+  `news` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teachers`
+--
+
+CREATE TABLE `teachers` (
+  `user` text NOT NULL,
+  `s_t` int(2) NOT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `phone` text DEFAULT NULL,
+  `pass` text NOT NULL,
+  `fullname` text NOT NULL,
+  `circle` text NOT NULL,
+  `age` date DEFAULT NULL,
+  `mosque` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `grades`
+--
+ALTER TABLE `grades`
+  ADD PRIMARY KEY (`user`(255));
+
+--
+-- Indexes for table `teachers`
+--
+ALTER TABLE `teachers`
+  ADD PRIMARY KEY (`user`(255));
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+-----------------------------------------------------------------------------
+
+CREATE TABLE `event` (
+  `event_name` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `grades` (
+  `part1` double DEFAULT NULL,
+  `part2` double DEFAULT NULL,
+  `part3` double DEFAULT NULL,
+  `part4` double DEFAULT NULL,
+  `part5` double DEFAULT NULL,
+  `part6` double DEFAULT NULL,
+  `part7` double DEFAULT NULL,
+  `part8` double DEFAULT NULL,
+  `part9` double DEFAULT NULL,
+  `part10` double DEFAULT NULL,
+  `part11` double DEFAULT NULL,
+  `part12` double DEFAULT NULL,
+  `part13` double DEFAULT NULL,
+  `part14` double DEFAULT NULL,
+  `part15` double DEFAULT NULL,
+  `circle` text NOT NULL,
+  `fullname` text NOT NULL,
+  `user` text NOT NULL,
+  `pic` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `news` (
+  `news` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `teachers` (
+  `user` text NOT NULL,
+  `s_t` int(2) NOT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `phone` text DEFAULT NULL,
+  `pass` text NOT NULL,
+  `fullname` text NOT NULL,
+  `circle` text NOT NULL,
+  `age` date DEFAULT NULL,
+  `mosque` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
